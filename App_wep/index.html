@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Offre des emplois</title>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style2.css" />
+      </head>
+      <style>
+        #progress-container {
+                width: 700px;
+                background-color: #ddd;
+                border-radius: 10px;
+                overflow: hidden;
+                height: 30px;
+            }
+            #progress-bar {
+                width: 0%;
+                height: 100%;
+                background-color: #4caf50;
+                text-align: center;
+                line-height: 30px;
+                color: white;
+                transition: width 0.1s ease-in-out;
+            } 
+      </style>
+      <body>
+      
+        <div class="container">
+          
+        
+          
+          <aside>
+            <div class="top">
+              <div class="logo">
+                <img src="./images/logo.png" alt="Logo" />
+                <h2>MY<span class="danger">WORK</span></h2>
+              </div>
+              <div class="close" id="close-btn">
+                <span class="material-icons-sharp"> close </span>
+              </div>
+              
+            </div>
+
+            <div class="sidebar">
+              <a href="#" class="active">
+                <span class="material-icons-sharp"> dashboard </span>
+                <h3>Offre d'emplois</h3>
+              </a>
+              <a href="selectionne.html" class="">
+                <span class="material-icons-sharp"> person_outline </span>
+                <h3>Selectionne</h3>
+              </a>
+              
+              <!-- <a href="#">
+                <span class="material-icons-sharp"> receipt_long </span>
+                <h3>Orders</h3>
+              </a> -->
+              <!-- <a href="#">
+                <span class="material-icons-sharp"> insights </span>
+                <h3>Analytics</h3>
+              </a> -->
+              <!-- <a href="#">
+                <span class="material-icons-sharp"> mail_outline </span>
+                <h3>Messages</h3>
+                <span class="message-count">26</span>
+              </a> -->
+              <!-- <a href="#">
+                <span class="material-icons-sharp"> inventory </span>
+                <h3>Products</h3>
+              </a> -->
+              <!-- <a href="#">
+                <span class="material-icons-sharp"> report_gmailerrorred </span>
+                <h3>Reports</h3>
+              </a> -->
+              <!-- <a href="#">
+                <span class="material-icons-sharp"> settings </span>
+                <h3>Settings</h3>
+              </a> -->
+              <a href="#">
+                <span class="material-icons-sharp"> add </span>
+                <h3>Ajouter travaille</h3>
+              </a>
+              <a href="#">
+                <span class="material-icons-sharp"> logout </span>
+                <h3>Logout</h3>
+              </a>
+            </div>
+          </aside>
+
+          
+
+          <main>
+          
+            <h1>Offre d'emploi</h1>
+
+            <!-- <div class="date">
+              <input type="date" />
+            </div> -->
+        
+
+            <div class="insights">
+            
+              <!-- SALES -->
+              <div class="sales">
+                <span class="material-icons-sharp"> analytics </span>
+                <div class="middle">
+                  <div class="left">
+                    <h3>Total offres</h3>
+                    <h1>0</h1>
+                  </div>
+                  <div class="progress">
+                    <!-- <svg>
+                      <circle cx="38" cy="38" r="36"></circle>
+                    </svg> -->
+                    <!-- <div class="number">
+                      <p>81%</p>
+                    </div> -->
+                  </div>
+                </div>
+                <small class="text-muted"> Tous les offres</small>
+              </div>
+              
+              <!-- EXPENSES -->
+              <div class="expenses">
+                <span class="material-icons-sharp"> bar_chart </span>
+                <div class="middle">
+                  <div class="left">
+                    <h3>total des nouveaux offres la derniere heure</h3>
+                    <h1>
+                      <div id="progress-container">
+                        <div id="progress-bar">0%</div>
+                      </div>
+                    </h1>
+                  </div>
+                  <div class="progress">
+                    <svg>
+                      <!-- <circle cx="38" cy="38" r="36"></circle> -->
+                    </svg>
+                    <!-- <div class="number">
+                      <p>62%</p>
+                    </div> -->
+                  </div>
+                </div>
+                <small class="text-muted"> Last 24 hours </small>
+              </div>
+
+              <!-- INCOME -->
+              <!-- <div class="income">
+                <span class="material-icons-sharp"> stacked_line_chart </span>
+                <div class="middle">
+                  <div class="left">
+                    <h3>Total Income</h3>
+                    <h1>$10,864</h1>
+                  </div>
+                  <div class="progress">
+                    <svg>
+                      <circle cx="38" cy="38" r="36"></circle>
+                    </svg>
+                    <div class="number">
+                      <p>44%</p>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-muted"> Last 24 hours </small>
+              </div> -->
+            </div>
+
+            <div class="recent-orders">
+              <h2>Recent emplois</h2>
+              <a href="#">Show All</a>
+            
+              <div class="job-container">
+                <!-- Job Card 1 -->
+                
+            
+                <!-- Job Card 2 -->
+            
+                <!-- Job Card 3 -->
+            
+                
+              </div>
+            </div>
+          </main>
+
+          <div class="right">
+            <div class="top">
+              <button id="menu-btn">
+                <span class="material-icons-sharp"> menu </span>
+              </button>
+              <div class="theme-toggler">
+                <span class="material-icons-sharp active"> light_mode </span>
+                <span class="material-icons-sharp"> dark_mode </span>
+              </div>
+              <div class="profile">
+                <div class="info">
+                  <p>Hey, <b>Bruno</b></p>
+                  <small class="text-muted">Admin</small>
+                </div>
+                <div class="profile-photo">
+                  <img src="./images/profile-1.jpg" alt="Profile Picture" />
+                </div>
+              </div>
+            </div>
+
+            <div class="recent-updates">
+              <h2>Recent Updates</h2>
+              <!-- Add updates div here | JS insertion -->
+              
+            </div>
+
+            <div class="sales-analytics">
+              <h2>All Company</h2>
+              <div id="analytics">
+                <!-- Add items div here | JS insertion -->
+                
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+        <script src="./constants/recent-order-data.js"></script>
+        <script src="./constants/update-data.js"></script>
+        <script src="./constants/sales-analytics-data.js"></script>
+        <script src="./index.js"></script>
+    <script>
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const analyticsDiv = document.getElementById("analytics"); // Cibler le div avec l'ID "analytics"
+        const totalJobsElement = document.querySelector(".sales .left h1"); 
+
+        fetch("toutes_les_offres.json")
+            .then(response => response.json())
+            .then(data => {
+                analyticsDiv.innerHTML = ""; // Vider le contenu actuel du div "analytics"
+                let totalJobs = data.length;
+
+                // Lancer l'animation de comptage
+                animateCounter(totalJobsElement, 0, totalJobs, 1500); 
+
+                data.forEach(job => {
+                    const jobItem = document.createElement("div");
+                    jobItem.classList.add("item"); // Ajouter la classe "item" pour correspondre au style existant
+
+                    jobItem.innerHTML = `
+                        <div class="icon">
+                            <span class="material-icons-sharp"> work </span> <!-- Icône pour représenter un emploi -->
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>${job.Poste}</h3>
+                                <small class="text-muted">${job.Entreprise}</small>
+                            </div>
+                            <h5 class="success">${job.Région}</h5>
+                            <h3>${job.Contrat}</h3>
+                            <a href="${job["URL de l'offre"]}" target="_blank" class="btn">Consulter</a>
+                            <button class="select-work-btn">Sélectionner</button>
+                        </div>
+                    `;
+
+                    analyticsDiv.appendChild(jobItem); // Ajouter chaque emploi au div "analytics"
+                });
+            })
+            .catch(error => console.error("Erreur lors du chargement des emplois :", error));
+    });
+
+    // -----------------------------------------------------------------------------------
+
+
+    function animateCounter(element, start, end, duration) {
+        let startTime = null;
+        
+        function updateCounter(currentTime) {
+            if (!startTime) startTime = currentTime;
+            let progress = Math.min((currentTime - startTime) / duration, 1);
+            element.textContent = Math.floor(progress * (end - start) + start);
+            
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            }
+        }
+        
+        requestAnimationFrame(updateCounter);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const jobContainer = document.querySelector(".job-container");
+        const totalJobsElement = document.querySelector(".sales .left h1"); 
+
+        fetch("toutes_les_offres.json")
+            .then(response => response.json())
+            .then(data => {
+                jobContainer.innerHTML = "";
+                let totalJobs = data.length;
+
+                // Lancer l'animation de comptage
+                animateCounter(totalJobsElement, 0, totalJobs, 1500); 
+
+                data.forEach(job => {
+                    const jobCard = document.createElement("div");
+                    jobCard.classList.add("job-card");
+
+                    jobCard.innerHTML = `
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="${job["Chemin de l'image"]}" alt="Company Logo" class="company-logo" />
+                                <h3>${job.Poste}</h3> 
+                                <p><strong>Région:</strong> ${job.Région}</p>
+                                <p><strong>Niveau d'étude:</strong> ${job["Niveau d'études"]}</p>
+                            </div>
+                            <div class="card-back">
+                                <h3>More Details</h3>
+                                <p><strong>Expérience:</strong> ${job["Niveau d'expérience"]}</p>
+                                <p><strong>Contrat:</strong> ${job.Contrat}</p>
+                                <p><strong>Compétences:</strong> ${job["Compétences clés"]}</p>
+                                <a href="${job["URL de l'offre"]}" target="_blank" class="btn">Consulter</a>
+                                <button class="select-work-btn">Sélectionner</button>
+                            </div>
+                        </div>
+                    `;
+
+                    jobContainer.appendChild(jobCard);
+                });
+            })
+            .catch(error => console.error("Erreur lors du chargement des emplois :", error));
+    });
+
+
+
+    // Function to save job to latter_work
+    function saveToLatterWork(job) {
+        let savedJobs = JSON.parse(localStorage.getItem("latter_work")) || [];
+
+        // Check if job is already saved
+        if (!savedJobs.some(savedJob => savedJob.Poste === job.Poste && savedJob.Région === job.Région)) {
+            savedJobs.push(job);
+            localStorage.setItem("latter_work", JSON.stringify(savedJobs));
+            alert("Travail ajouté avec succès !");
+        } else {
+            alert("Ce travail est déjà sélectionné !");
+        }
+    }
+
+    </script>
+    <script>
+    function updateProgressBar(value) {
+        const progressBar = document.getElementById("progress-bar");
+        progressBar.style.width = value + "%"; // Update width
+        progressBar.textContent = value; // Update text content (without %)
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        let progressValue = 0;
+
+        const interval = setInterval(() => {
+            if (progressValue >= 40) {
+                progressValue = 0; // Reset to 0 after reaching 100
+            } else {
+                progressValue += 1; // Increment by 1
+            }
+            updateProgressBar(progressValue); // Update progress bar
+        }, 100); // Update every 100ms
+    });
+      </script>
+
+    <script>
+      // Executes when document is loaded
+    document.addEventListener("DOMContentLoaded", () => {
+      // Recent Orders Data
+      const recentOrdersTable = document.getElementById("recent-orders--table");
+      if (!recentOrdersTable.querySelector("tbody")) {
+        recentOrdersTable.appendChild(buildTableBody());
+      }
+
+      // Updates Data
+      const recentUpdates = document.getElementsByClassName("recent-updates").item(0);
+      if (recentUpdates && !recentUpdates.querySelector(".updates")) {
+        recentUpdates.appendChild(buildUpdatesList());
+      }
+
+      // Sales Analytics
+      const salesAnalytics = document.getElementById("analytics");
+      if (salesAnalytics && salesAnalytics.children.length === 0) {
+        buildSalesAnalytics(salesAnalytics);
+      }
+    });
+
+    // Document Builder
+    const buildTableBody = () => {
+      const tbody = document.createElement("tbody");
+      tbody.innerHTML = RECENT_ORDER_DATA.map(row => `
+        <tr>
+          <td>${row.productName}</td>
+          <td>${row.productNumber}</td>
+          <td>${row.payment}</td>
+          <td class="${row.statusColor}">${row.status}</td>
+          <td class="primary">Details</td>
+        </tr>
+      `).join("");
+      return tbody;
+    };
+
+    const buildUpdatesList = () => {
+      const div = document.createElement("div");
+      div.classList.add("updates");
+      div.innerHTML = UPDATE_DATA.map(update => `
+        <div class="update">
+          <div class="profile-photo">
+            <img src="${update.imgSrc}" />
+          </div>
+          <div class="message">
+            <p><b>${update.profileName}</b> ${update.message}</p>
+            <small class="text-muted">${update.updatedTime}</small>
+          </div>
+        </div>
+      `).join("");
+      return div;
+    };
+
+    const buildSalesAnalytics = (element) => {
+      element.innerHTML = SALES_ANALYTICS_DATA.map(analytic => `
+        <div class="item ${analytic.itemClass}">
+          <div class="icon">
+            <span class="material-icons-sharp"> ${analytic.icon} </span>
+          </div>
+          <div class="right">
+            <div class="info">
+              <h3>${analytic.title}</h3>
+              <small class="text-muted"> Last 24 Hours </small>
+            </div>
+            <h5 class="${analytic.colorClass}">${analytic.percentage}%</h5>
+            <h3>${analytic.sales}</h3>
+          </div>
+        </div>
+      `).join("");
+    };
+
+    // Document operation functions
+    const sideMenu = document.querySelector("aside");
+    const menuBtn = document.querySelector("#menu-btn");
+    const closeBtn = document.querySelector("#close-btn");
+    const themeToggler = document.querySelector(".theme-toggler");
+
+    // Show Sidebar
+    if (menuBtn) {
+      menuBtn.addEventListener("click", () => {
+        sideMenu.style.display = "block";
+      });
+    }
+
+    // Hide Sidebar
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        sideMenu.style.display = "none";
+      });
+    }
+
+    // Change Theme
+    if (themeToggler) {
+      themeToggler.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme-variables");
+        themeToggler.querySelector("span:nth-child(1)").classList.toggle("active");
+        themeToggler.querySelector("span:nth-child(2)").classList.toggle("active");
+      });
+    }
+
+
+    </script>
+
+      </body>
+    </html>
