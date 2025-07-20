@@ -76,6 +76,8 @@ The project is divided into **4 main components**:
 ```bash
 git clone https://github.com/Mohammed78-Dch/Job-offers-scraper.git
 cd Job-offers-scraper
+```
+---
 
 ## 📈 Results
 
